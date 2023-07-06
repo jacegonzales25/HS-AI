@@ -1,0 +1,74 @@
+
+.container {
+    font-family: Söhne,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    width: auto;
+    position: relative;
+    left: 6%;
+    bottom: 50px;
+}
+
+.container h2 {
+    width: auto;
+    bottom: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.button-cont {
+    width: auto;
+    position: relative;
+}
+
+.card-attributes {
+    background-color: #424752;
+    border-radius: 10px;
+    height: 120px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    border: 5px solid #424752;
+    width: 30%;
+    padding: 10px;
+
+    position: relative;
+    left: 35%;
+ 
+    transition: background-color 0.3s ease-in;
+    transition: border-color 0.2s ease-in;
+    transition: transform 0.2s ease-in;
+}
+
+
+
+
+.card-attributes:hover {
+    transform: scale(1.02);
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.card-text {
+    font-size: large;
+}
+
+.icon {
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(322deg) brightness(102%) contrast(103%);
+
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 800px) {
+    .card-attributes {
+      width: 50%;
+      left: 24%;
+    }
+}

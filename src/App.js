@@ -1,22 +1,25 @@
-import logo from './logo.svg';
+import TextContainer from './Components/TextContainer/textContainer.jsx';
+import Terminal  from './Components/Terminal/terminal.jsx';
+import Sidebar from './Components/SideBar/sideBar.jsx';
 import './App.css';
+import React, { useState } from "react";
 
 function App() {
+
+  const [clickState, setIsClicked] = useState(false);
+
+  function submitPrompt() {
+    setIsClicked(true);
+    console.log(clickState);
+  }
+
+
   return (
     <div className="App">
+      <Sidebar />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <TextContainer isClicked={clickState}/> 
+        <Terminal submitFunction={submitPrompt}/>      
       </header>
     </div>
   );
